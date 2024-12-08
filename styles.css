@@ -1,0 +1,383 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    background-image: url('fondon.jpg');
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x400/?wood,carpentry') no-repeat center center/cover;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #F39C12; /* Color amarillo para el título */
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Sección de servicios */
+.services-section {
+    margin-top: 3rem;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    color: #D35400; /* Naranja madera */
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #D35400; /* Borde naranja madera */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 a {
+    text-decoration: none;
+    color: #D35400; /* Enlaces en naranja madera */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.service-item h3 a:hover {
+    color: #27AE60; /* Verde suave al pasar sobre los enlaces */
+}
+
+.service-item p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Redes Sociales */
+.social-section {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.social-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    color: #f0cf11;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-icons a.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-icons a.whatsapp {
+    background-color: #25d366;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Sección de contacto */
+.contact-section {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #27AE60; /* Fondo verde para contacto */
+    border-radius: 10px;
+    color: #fff; /* Texto blanco */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para el botón de volver a la página principal */
+.back-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D35400; /* Naranja madera */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #27AE60; /* Cambia a verde suave al pasar el mouse */
+}
+
+/* Estilo de la galería */
+.gallery-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 300px; /* Limitar el ancho máximo de las imágenes */
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar el tamaño de las imágenes en la galería */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.gif-izquierda {
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+    margin-left: -200px;
+}
+
+.welcome-section {
+    background-color: #fff; /* Fondo blanco */
+    padding: 2rem; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 2rem; /* Espacio en la parte superior */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Efecto de agrandamiento al hacer clic */
+.zoom-img {
+    transition: transform 0.3s ease; /* Transición suave */
+    cursor: pointer;
+}
+
+.zoom-img.active {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        padding: 1.5rem;
+    }
+
+    .service-item h3 a {
+        font-size: 1.2rem;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+    }
+
+    .social-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .back-button {
+        font-size: 1rem;
+    }
+
+    .gallery-item {
+        max-width: 250px;
+    }
+
+    .gif-izquierda {
+        width: 120px;
+        margin-left: -150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    .services-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-item {
+        padding: 1rem;
+    }
+
+    .service-item h3 a {
+        font-size: 1rem;
+    }
+
+    .service-item p {
+        font-size: 0.8rem;
+    }
+
+    .social-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .back-button {
+        font-size: 1rem;
+    }
+
+    .gallery-item {
+        max-width: 200px;
+    }
+
+    .gif-izquierda {
+        width: 100px;
+        margin-left: -120px;
+    }
+}
