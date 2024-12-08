@@ -35,7 +35,7 @@ header {
 .header-content h1 {
     font-size: 3.5rem;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: bold;
     color: #F39C12; /* Color amarillo para el título */
 }
